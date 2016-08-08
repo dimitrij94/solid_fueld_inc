@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - solid_fuel@localhost" uuid="36f7350e-ff2d-4d80-8819-e4e3e05ef3bc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="solid_fuel">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="geodata"/>
+      <schema id="3" name="information_schema"/>
+      <schema id="4" name="myplacetogo"/>
+      <schema id="5" name="mysql"/>
+      <schema id="6" name="performance_schema"/>
+      <schema id="7" name="phpmyadmin"/>
+    </database-model>
+  </data-source>
+</component>
