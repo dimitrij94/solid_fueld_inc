@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1432005482">
-    <data-source source="LOCAL" name="MySQL - solid_fuel@localhost" uuid="36f7350e-ff2d-4d80-8819-e4e3e05ef3bc">
+  <component name="DataSourceManagerImpl" format="xml" hash="2946346345">
+    <data-source source="LOCAL" name="MySQL - solid_fuel@localhost" uuid="915e114e-998d-4610-8b6b-ff7036a882c9">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/solid_fuel</jdbc-url>
       <driver-properties>
+        <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
         <property name="characterEncoding" value="utf8" />

@@ -1,0 +1,16 @@
+<div layout="row" layout-align="start center">
+    <md-button class="md-primary" ng-click="changeSorting(sort.name)">Ім'я
+        <md-icon class="material-icons md-24">keyboard_arrow_{{sort.name.direction}}</md-icon>
+    </md-button>
+    <md-button class="md-primary" ng-click="changeSorting(sort.date)">Дата
+        <md-icon class="material-icons md-24">keyboard_arrow_{{sort.date.direction}}</md-icon>
+    </md-button>
+    <span flex></span>
+    <input style="width: 100%" placeholder="Пошук" ng-model="query.client.name">
+</div>
+<md-content>
+    <md-list>
+        <order ng-repeat="order in orders|filter:query|orderBy:activeSorting.directionSign+activeSorting.name"
+               order="order" active="isActive(order)" ng-click="selectOrder(order);"></order>
+    </md-list>
+</md-content>

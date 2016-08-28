@@ -1,0 +1,15 @@
+<div layout="column" layout-align="center center">
+    <md-content flex-sm="100" flex-gt-sm="30" md-theme="docs-dark">
+        <ng-form flex onsubmit="login()">
+            <md-input-container>
+                <label>Login</label>
+                <input name="userName" type="text" ng-model="admin.userName">
+            </md-input-container>
+            <md-input-container>
+                <label>Password</label>
+                <input name="password" type="password" ng-model="admin.password">
+            </md-input-container>
+            <md-button ng-click="login()" type="submit">Войти</md-button>
+        </ng-form>
+    </md-content>
+</div>

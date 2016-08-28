@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.controllers.ClientControllerTest" time="5.41" tests="4" errors="3" skipped="0" failures="1">
+  <properties>
+    <property name="idea.version" value="2016.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\Programs\Java\jdk_1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7532"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Projects\KeyStyleMysql\solid_fueld_inc"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\Programs\Java\jdk_1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Dmitrij\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="E:\Programs\Java\jdk_1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Skype\Phone\;E:\Programs\Java\jdk_1.8\bin;E:\Programs\Brackets\command;E:\Programs\Node.js\;C:\Users\Dmitrij\AppData\Roaming\npm;C:\Users\Dmitrij\AppData\Local\Programs\Python\Python35;E:\Programs\jEdit;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Dmitrij\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\Programs\Git\cmd;C:\Program Files (x86)\sbt\\bin;E:\Programs\Anaconda2;E:\Programs\Anaconda2\Scripts;C:\Users\Dmitrij\AppData\Roaming\npm;E:\Programs\Anaconda2\envs\py3k;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Dmitrij"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="E:\Programs\IntelliJ IDEA 2016.2\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Dmitrij"/>
+    <property name="java.class.path" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.4.jar;E:\Programs\IntelliJ IDEA 2016.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\Programs\Java\jdk_1.8\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.2 test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="E:\Programs\Java\jdk_1.8\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\Programs\Java\jdk_1.8\jre\lib\resources.jar;E:\Programs\Java\jdk_1.8\jre\lib\rt.jar;E:\Programs\Java\jdk_1.8\jre\lib\sunrsasign.jar;E:\Programs\Java\jdk_1.8\jre\lib\jsse.jar;E:\Programs\Java\jdk_1.8\jre\lib\jce.jar;E:\Programs\Java\jdk_1.8\jre\lib\charsets.jar;E:\Programs\Java\jdk_1.8\jre\lib\jfr.jar;E:\Programs\Java\jdk_1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testUpdateClient" classname="com.example.controllers.ClientControllerTest" time="5.41">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<400>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:655)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at com.example.controllers.ClientControllerTest.testUpdateClient(ClientControllerTest.java:146)
+]]></failure>
+    <system-out><![CDATA[18:37:09.127 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.controllers.ClientControllerTest]
+18:37:09.159 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:37:09.190 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:37:09.205 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.controllers.ClientControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+18:37:09.284 [main] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@731a74c declaringClass = 'com.example.controllers.ClientControllerTest', classes = '{class com.example.SolidFuelIncApplication, class com.example.configuration.PersistenceConfig, class com.example.configuration.WebMvcConfig, class com.example.configuration.SecurityConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+18:37:09.315 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.controllers.ClientControllerTest]: class path resource [com/example/controllers/ClientControllerTest-context.xml] does not exist
+18:37:09.315 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.controllers.ClientControllerTest]: class path resource [com/example/controllers/ClientControllerTestContext.groovy] does not exist
+18:37:09.315 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.controllers.ClientControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:37:09.315 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.controllers.ClientControllerTest]
+18:37:09.419 [main] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1786dec2, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@74650e52, org.springframework.test.context.support.DirtiesContextTestExecutionListener@15d0c81b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6acdbdf5, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4b1c1ea0]
+18:37:09.419 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.SolidFuelIncApplicationTests]
+18:37:09.434 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:37:09.434 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:37:09.434 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.SolidFuelIncApplicationTests] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+18:37:09.434 [main] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@17579e0f declaringClass = 'com.example.SolidFuelIncApplicationTests', classes = '{class com.example.SolidFuelIncApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+18:37:09.450 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.SolidFuelIncApplicationTests]: class path resource [com/example/SolidFuelIncApplicationTests-context.xml] does not exist
+18:37:09.450 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.SolidFuelIncApplicationTests]: class path resource [com/example/SolidFuelIncApplicationTestsContext.groovy] does not exist
+18:37:09.450 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.SolidFuelIncApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:37:09.450 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.SolidFuelIncApplicationTests]
+18:37:09.450 [main] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.SolidFuelIncApplicationTests]: using defaults.
+18:37:09.591 [main] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener]
+18:37:09.606 [main] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@bd8db5a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f943d71, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@80503, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4b553d26, org.springframework.test.context.transaction.TransactionalTestExecutionListener@69a3d1d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@86be70a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@480bdb19]
+18:37:09.622 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.controllers.ClientControllerTest]
+18:37:09.622 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.controllers.ClientControllerTest]
+18:37:09.622 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.SolidFuelIncApplicationTests]
+18:37:09.622 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.SolidFuelIncApplicationTests]
+18:37:09.637 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.controllers.ClientControllerTest]
+18:37:09.637 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:37:09.637 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:37:09.637 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.controllers.ClientControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+18:37:09.637 [main] DEBUG org.springframework.test.context.web.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@436e852b declaringClass = 'com.example.controllers.ClientControllerTest', classes = '{class com.example.SolidFuelIncApplication, class com.example.configuration.PersistenceConfig, class com.example.configuration.WebMvcConfig, class com.example.configuration.SecurityConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+18:37:09.637 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.controllers.ClientControllerTest]: class path resource [com/example/controllers/ClientControllerTest-context.xml] does not exist
+18:37:09.637 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.controllers.ClientControllerTest]: class path resource [com/example/controllers/ClientControllerTestContext.groovy] does not exist
+18:37:09.637 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.controllers.ClientControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:37:09.637 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.controllers.ClientControllerTest]
+18:37:09.653 [main] INFO org.springframework.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32d2fa64, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1d8d30f7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e57cd70, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9a7504c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2c039ac6]
+18:37:09.653 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.controllers.ClientControllerTest]
+18:37:09.669 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.controllers.ClientControllerTest]
+18:37:09.669 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.controllers.ClientControllerTest]
+18:37:09.669 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.controllers.ClientControllerTest]
+18:37:09.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.controllers.ClientControllerTest]
+18:37:09.684 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.controllers.ClientControllerTest]
+18:37:10.200 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+18:37:10.200 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+18:37:10.200 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+18:37:10.216 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.6.RELEASE)
+
+2016-08-09 18:37:11.737  INFO 5896 --- [           main] c.e.controllers.ClientControllerTest     : Starting ClientControllerTest on home with PID 5896 (E:\Projects\KeyStyleMysql\solid_fueld_inc\target\test-classes started by Dmitrij in E:\Projects\KeyStyleMysql\solid_fueld_inc)
+2016-08-09 18:37:11.737  INFO 5896 --- [           main] c.e.controllers.ClientControllerTest     : No active profile set, falling back to default profiles: default
+2016-08-09 18:37:12.455  INFO 5896 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: startup date [Tue Aug 09 18:37:12 EEST 2016]; root of context hierarchy
+2016-08-09 18:37:12.455 DEBUG 5896 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Bean factory for org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: org.springframework.beans.factory.support.DefaultListableBeanFactory@74455848: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,solidFuelIncApplication,persistenceConfig,webMvcConfig,securityConfig]; root of factory hierarchy
+2016-08-09 18:37:52.860 DEBUG 5896 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Using MessageSource [org.springframework.context.support.ReloadableResourceBundleMessageSource: basenames=[classpath:messages/messages]]
+2016-08-09 18:37:52.860 DEBUG 5896 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Using ApplicationEventMulticaster [org.springframework.context.event.SimpleApplicationEventMulticaster@8ed9cf]
+2016-08-09 18:37:53.173  INFO 5896 --- [           main] o.s.j.d.DriverManagerDataSource          : Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-08-09 18:38:07.297  INFO 5896 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-08-09 18:38:12.703  INFO 5896 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-08-09 18:38:14.844  INFO 5896 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-08-09 18:38:14.844  INFO 5896 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-08-09 18:38:14.953  INFO 5896 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-08-09 18:38:17.000  INFO 5896 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-08-09 18:38:21.657  INFO 5896 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-08-09 18:38:22.766  INFO 5896 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-08-09 18:38:25.110  INFO 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+Hibernate: 
+    alter table Address 
+        drop 
+        foreign key FK_awoxuba1gairjptxcidc24vhs
+2016-08-09 18:38:25.157 ERROR 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table Address drop foreign key FK_awoxuba1gairjptxcidc24vhs
+2016-08-09 18:38:25.157 ERROR 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'solid_fuel.address' doesn't exist
+Hibernate: 
+    alter table ClientOrder 
+        drop 
+        foreign key FK_d662xg4xm56o59hrinss6t5os
+2016-08-09 18:38:25.172 ERROR 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table ClientOrder drop foreign key FK_d662xg4xm56o59hrinss6t5os
+2016-08-09 18:38:25.172 ERROR 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : Table 'solid_fuel.clientorder' doesn't exist
+Hibernate: 
+    drop table if exists Address
+Hibernate: 
+    drop table if exists Admin
+Hibernate: 
+    drop table if exists Client
+Hibernate: 
+    drop table if exists ClientOrder
+Hibernate: 
+    create table Address (
+        id bigint not null auto_increment,
+        appartment integer not null,
+        building integer not null,
+        city varchar(25),
+        street varchar(25),
+        client_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    create table Admin (
+        id bigint not null auto_increment,
+        enabled bit not null,
+        password varchar(255),
+        phone varchar(255),
+        userName varchar(25),
+        primary key (id)
+    )
+Hibernate: 
+    create table Client (
+        id bigint not null auto_increment,
+        firstName varchar(30),
+        lastName varchar(30),
+        primary key (id)
+    )
+Hibernate: 
+    create table ClientOrder (
+        id bigint not null auto_increment,
+        orderClosed date,
+        orderMade date,
+        quantityKG integer not null,
+        requestContent varchar(255),
+        status integer,
+        client_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    alter table Address 
+        add constraint FK_awoxuba1gairjptxcidc24vhs 
+        foreign key (client_id) 
+        references Client (id)
+Hibernate: 
+    alter table ClientOrder 
+        add constraint FK_d662xg4xm56o59hrinss6t5os 
+        foreign key (client_id) 
+        references Client (id)
+2016-08-09 18:38:34.918  INFO 5896 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-08-09 18:38:43.264 DEBUG 5896 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: startup date [Tue Aug 09 18:37:12 EEST 2016]; root of context hierarchy
+2016-08-09 18:38:43.354  INFO 5896 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in validationHandlerAdvice
+2016-08-09 18:38:57.905 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: startup date [Tue Aug 09 18:37:12 EEST 2016]; root of context hierarchy
+2016-08-09 18:38:57.929 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 request handler methods found on class com.example.controllers.ClientController: {public java.lang.Object com.example.controllers.GenericController.find(java.lang.Long)={[/client/{id}],methods=[GET]}, public void com.example.controllers.GenericController.delete(java.lang.Long) throws javassist.NotFoundException={[/client/{id}],methods=[DELETE]}, public java.lang.Object com.example.controllers.GenericController.post(java.lang.Object)={[/client],methods=[POST]}, public java.lang.Object com.example.controllers.GenericController.upadate(java.lang.Object,java.lang.Long) throws javassist.NotFoundException={[/client/{id}],methods=[PUT]}}
+2016-08-09 18:38:57.930  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/client/{id}],methods=[GET]}" onto public T com.example.controllers.GenericController.find(java.lang.Long)
+2016-08-09 18:38:57.932  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/client/{id}],methods=[DELETE]}" onto public void com.example.controllers.GenericController.delete(java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:38:57.933  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/client],methods=[POST]}" onto public T com.example.controllers.GenericController.post(T)
+2016-08-09 18:38:57.938  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/client/{id}],methods=[PUT]}" onto public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:38:57.949 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 request handler methods found on class com.example.controllers.OrderController: {public java.lang.Object com.example.controllers.GenericController.find(java.lang.Long)={[/order/{id}],methods=[GET]}, public void com.example.controllers.GenericController.delete(java.lang.Long) throws javassist.NotFoundException={[/order/{id}],methods=[DELETE]}, public java.lang.Object com.example.controllers.GenericController.post(java.lang.Object)={[/order],methods=[POST]}, public java.lang.Object com.example.controllers.GenericController.upadate(java.lang.Object,java.lang.Long) throws javassist.NotFoundException={[/order/{id}],methods=[PUT]}}
+2016-08-09 18:38:57.950  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/{id}],methods=[GET]}" onto public T com.example.controllers.GenericController.find(java.lang.Long)
+2016-08-09 18:38:57.954  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/{id}],methods=[DELETE]}" onto public void com.example.controllers.GenericController.delete(java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:38:57.955  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order],methods=[POST]}" onto public T com.example.controllers.GenericController.post(T)
+2016-08-09 18:38:57.959  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/order/{id}],methods=[PUT]}" onto public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:38:57.966 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}, public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}}
+2016-08-09 18:38:57.966  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-08-09 18:38:57.967  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-09 18:38:59.361 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: startup date [Tue Aug 09 18:37:12 EEST 2016]; root of context hierarchy
+2016-08-09 18:38:59.363 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2016-08-09 18:38:59.363 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2016-08-09 18:38:59.363 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'solidFuelIncApplication': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceConfig': no URL paths identified
+2016-08-09 18:38:59.364 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'webMvcConfig': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityConfig': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'myUserDetailService': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'clientController': no URL paths identified
+2016-08-09 18:38:59.365 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'orderController': no URL paths identified
+2016-08-09 18:38:59.366 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'validationHandlerAdvice': no URL paths identified
+2016-08-09 18:38:59.368 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'adminService': no URL paths identified
+2016-08-09 18:38:59.369 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'clientService': no URL paths identified
+2016-08-09 18:38:59.370 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'orderService': no URL paths identified
+2016-08-09 18:38:59.370 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'testUtils': no URL paths identified
+2016-08-09 18:38:59.370 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2016-08-09 18:38:59.371 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.aspectj.AspectJTransactionManagementConfiguration': no URL paths identified
+2016-08-09 18:38:59.371 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAspect': no URL paths identified
+2016-08-09 18:38:59.373 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2016-08-09 18:38:59.374 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2016-08-09 18:38:59.374 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaVendorAdapter': no URL paths identified
+2016-08-09 18:38:59.374 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactory': no URL paths identified
+2016-08-09 18:38:59.374 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2016-08-09 18:38:59.374 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0': no URL paths identified
+2016-08-09 18:38:59.375 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor': no URL paths identified
+2016-08-09 18:38:59.375 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+2016-08-09 18:38:59.375 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified
+2016-08-09 18:38:59.375 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified
+2016-08-09 18:38:59.375 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'clientRepository': no URL paths identified
+2016-08-09 18:38:59.377 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'clientOrderRepository': no URL paths identified
+2016-08-09 18:38:59.377 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'adminRepository': no URL paths identified
+2016-08-09 18:38:59.377 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration': no URL paths identified
+2016-08-09 18:38:59.377 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2016-08-09 18:38:59.377 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2016-08-09 18:38:59.378 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2016-08-09 18:38:59.378 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2016-08-09 18:38:59.378 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2016-08-09 18:38:59.379 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2016-08-09 18:38:59.392 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2016-08-09 18:38:59.392 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2016-08-09 18:38:59.393 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2016-08-09 18:38:59.393 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2016-08-09 18:38:59.393 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2016-08-09 18:38:59.394 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2016-08-09 18:38:59.394 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2016-08-09 18:38:59.395 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2016-08-09 18:38:59.395 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2016-08-09 18:38:59.395 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2016-08-09 18:38:59.395 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2016-08-09 18:38:59.395 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationManagerBuilder': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'enableGlobalAuthenticationAutowiredConfigurer': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'privilegeEvaluator': no URL paths identified
+2016-08-09 18:38:59.396 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'delegatingApplicationListener': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'webSecurityExpressionHandler': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springSecurityFilterChain': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autowiredWebSecurityConfigurersIgnoreParents': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'objectPostProcessor': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration': no URL paths identified
+2016-08-09 18:38:59.397 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestDataValueProcessor': no URL paths identified
+2016-08-09 18:38:59.398 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'antPathRequestMatcher': no URL paths identified
+2016-08-09 18:38:59.398 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.399 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2016-08-09 18:38:59.399 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2016-08-09 18:38:59.399 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2016-08-09 18:38:59.399 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2016-08-09 18:38:59.399 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.400 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2016-08-09 18:38:59.400 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2016-08-09 18:38:59.400 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.422 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2016-08-09 18:38:59.423 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2016-08-09 18:38:59.423 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2016-08-09 18:38:59.423 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2016-08-09 18:38:59.425 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.429 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2016-08-09 18:38:59.429 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2016-08-09 18:38:59.430 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.432 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2016-08-09 18:38:59.433 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2016-08-09 18:38:59.446 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2016-08-09 18:38:59.446 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.447 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2016-08-09 18:38:59.448 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2016-08-09 18:38:59.449 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2016-08-09 18:38:59.449 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2016-08-09 18:38:59.449 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2016-08-09 18:38:59.450 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2016-08-09 18:38:59.450 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.451 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.452 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.453 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+2016-08-09 18:38:59.453 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2016-08-09 18:38:59.453 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2016-08-09 18:38:59.454 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration': no URL paths identified
+2016-08-09 18:38:59.455 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2016-08-09 18:38:59.455 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2016-08-09 18:38:59.455 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2016-08-09 18:38:59.458 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2016-08-09 18:38:59.459 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.460 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.460 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2016-08-09 18:38:59.460 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+2016-08-09 18:38:59.460 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+2016-08-09 18:38:59.461 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+2016-08-09 18:38:59.461 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.461 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+2016-08-09 18:38:59.461 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jpa.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.462 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+2016-08-09 18:38:59.462 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.462 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.462 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2016-08-09 18:38:59.463 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2016-08-09 18:38:59.464 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2016-08-09 18:38:59.464 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.464 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2016-08-09 18:38:59.464 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2016-08-09 18:38:59.466 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.466 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2016-08-09 18:38:59.466 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2016-08-09 18:38:59.467 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.467 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2016-08-09 18:38:59.468 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2016-08-09 18:38:59.468 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2016-08-09 18:38:59.469 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.470 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2016-08-09 18:38:59.470 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+2016-08-09 18:38:59.470 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified
+2016-08-09 18:38:59.471 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified
+2016-08-09 18:38:59.473 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+2016-08-09 18:38:59.474 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified
+2016-08-09 18:38:59.474 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.474 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$AuthenticationManagerConfigurationListener': no URL paths identified
+2016-08-09 18:38:59.474 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration': no URL paths identified
+2016-08-09 18:38:59.474 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationManager': no URL paths identified
+2016-08-09 18:38:59.475 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootAuthenticationConfigurerAdapter': no URL paths identified
+2016-08-09 18:38:59.475 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.BootGlobalAuthenticationConfiguration': no URL paths identified
+2016-08-09 18:38:59.475 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'bootGlobalAuthenticationConfigurationAdapter': no URL paths identified
+2016-08-09 18:38:59.476 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.477 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'authenticationEventPublisher': no URL paths identified
+2016-08-09 18:38:59.477 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityProperties': no URL paths identified
+2016-08-09 18:38:59.478 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.484 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.security.SecurityFilterAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.485 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'securityFilterChainRegistration': no URL paths identified
+2016-08-09 18:38:59.488 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.489 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2016-08-09 18:38:59.489 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.490 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2016-08-09 18:38:59.490 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.490 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2016-08-09 18:38:59.491 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2016-08-09 18:38:59.491 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+2016-08-09 18:38:59.493 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2016-08-09 18:38:59.493 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2016-08-09 18:38:59.495 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2016-08-09 18:38:59.495 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+2016-08-09 18:38:59.495 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2016-08-09 18:38:59.497 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2016-08-09 18:38:59.501 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2016-08-09 18:38:59.501 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2016-08-09 18:38:59.503 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2016-08-09 18:38:59.503 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2016-08-09 18:38:59.503 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2016-08-09 18:38:59.516 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2016-08-09 18:38:59.517 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2016-08-09 18:38:59.517 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2016-08-09 18:38:59.518 DEBUG 5896 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2016-08-09 18:39:00.257  INFO 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4218d6a3: startup date [Tue Aug 09 18:37:12 EEST 2016]; root of context hierarchy
+2016-08-09 18:39:07.265 DEBUG 5896 --- [           main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {securityConfig=com.example.configuration.SecurityConfig$$EnhancerBySpringCGLIB$$a20d669b@14d8e132}
+2016-08-09 18:39:07.308  INFO 5896 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 31d6f539-6932-4a50-9841-a4bfd8bda236
+
+2016-08-09 18:39:08.970 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:08.970 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:08.971 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:08.971 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:08.972 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.600 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.600 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.600 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.601 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.601 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.602 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.602 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.602 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.603 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.603 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.610 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.610 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.610 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.610 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.611 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.675 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.675 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.675 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.675 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.675 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.685 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.685 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.686 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.686 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.688 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.707 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.708 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.708 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.708 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.708 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.717 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.717 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.717 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.720 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.724 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.731 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.731 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.733 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.733 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.740 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.755 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.756 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.757 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.757 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.757 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.763 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.763 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.764 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.764 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.766 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.788 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.789 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.790 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.790 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.792 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.802 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.805 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:10.806 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:10.830 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:10.830 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:10.959 DEBUG 5896 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/', GET]
+2016-08-09 18:39:12.518 DEBUG 5896 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/', POST]
+2016-08-09 18:39:12.519 DEBUG 5896 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/', DELETE]
+2016-08-09 18:39:12.519 DEBUG 5896 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'hasRole('ROLE_ADMIN')', for Ant [pattern='/', PUT]
+2016-08-09 18:39:12.519 DEBUG 5896 --- [           main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'denyAll', for Ant [pattern='/admin', DELETE]
+2016-08-09 18:39:12.543 DEBUG 5896 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2016-08-09 18:39:12.545 DEBUG 5896 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2016-08-09 18:39:12.554  INFO 5896 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c7d7430, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d2a86c0, org.springframework.security.web.header.HeaderWriterFilter@2becfd4c, org.springframework.security.web.csrf.CsrfFilter@53a301f3, com.example.filters.CsrfTokenToCookieFilter@4ea1aa52, org.springframework.security.web.authentication.logout.LogoutFilter@6744707b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24a4e2c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65bd19bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26c7b1c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74123110, org.springframework.security.web.session.SessionManagementFilter@70fede7d, org.springframework.security.web.access.ExceptionTranslationFilter@341c6ac2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1282e98]
+2016-08-09 18:39:12.557 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:12.557 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:12.557 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:12.558 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:12.558 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:39:55.474 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:55.474 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:39:55.475 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:39:55.475 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:39:55.475 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:40:02.759 DEBUG 5896 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@32da97fd]
+2016-08-09 18:40:02.769 DEBUG 5896 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2016-08-09 18:40:02.770 DEBUG 5896 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : No resource handling mappings found
+2016-08-09 18:40:05.919  INFO 5896 --- [           main] c.e.controllers.ClientControllerTest     : Started ClientControllerTest in 175.67 seconds (JVM running for 178.511)
+2016-08-09 18:40:16.673 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:16.673 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:16.674 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:40:16.674 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:40:16.674 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:40:16.674  INFO 5896 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-08-09 18:40:16.675  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-08-09 18:40:18.980  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2305 ms
+Hibernate: 
+    insert 
+    into
+        Admin
+        (enabled, password, phone, userName) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.enabled as enabled2_1_,
+        admin0_.password as password3_1_,
+        admin0_.phone as phone4_1_,
+        admin0_.userName as userName5_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+Hibernate: 
+    insert 
+    into
+        Client
+        (firstName, lastName) 
+    values
+        (?, ?)
+2016-08-09 18:40:45.697 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2016-08-09 18:40:45.791 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] w.c.HttpSessionSecurityContextRepository : HttpSession returned null object for SPRING_SECURITY_CONTEXT
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: org.springframework.mock.web.MockHttpSession@3c3e363. A new one will be created.
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@255ed8e4
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 5 of 13 in additional filter chain; firing Filter: 'CsrfTokenToCookieFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /client/1' doesn't match 'POST /logout
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 7 of 13 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2016-08-09 18:40:45.807 DEBUG 5896 --- [           main] o.s.s.w.a.www.BasicAuthenticationFilter  : Basic Authentication Authorization header found for user 'Dimitrij94'
+2016-08-09 18:40:45.822 DEBUG 5896 --- [           main] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.enabled as enabled2_1_,
+        admin0_.password as password3_1_,
+        admin0_.phone as phone4_1_,
+        admin0_.userName as userName5_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+2016-08-09 18:40:45.994 DEBUG 5896 --- [           main] o.s.s.w.a.www.BasicAuthenticationFilter  : Authentication success: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7217a1d3: Principal: com.example.adapters.AdminUserDetails@32b46831; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 1; Granted Authorities: ROLE_ADMIN
+2016-08-09 18:40:45.994 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2016-08-09 18:40:45.994 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2016-08-09 18:40:46.010 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2016-08-09 18:40:46.010 DEBUG 5896 --- [           main] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7217a1d3: Principal: com.example.adapters.AdminUserDetails@32b46831; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 1; Granted Authorities: ROLE_ADMIN'
+2016-08-09 18:40:46.010 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2016-08-09 18:40:46.010 DEBUG 5896 --- [           main] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@9690008
+2016-08-09 18:40:46.010 DEBUG 5896 --- [           main] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@4b691611
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@7217a1d3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7217a1d3: Principal: com.example.adapters.AdminUserDetails@32b46831; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 1; Granted Authorities: ROLE_ADMIN' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@3c3e363
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /client/1' doesn't match 'GET /
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /client/1' doesn't match 'POST /
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /client/1' doesn't match 'DELETE /
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/client/1'; against '/'
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /client/1' doesn't match 'DELETE /admin
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Public object - authentication not attempted
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] o.s.security.web.FilterChainProxy        : /client/1 reached end of additional filter chain; proceeding with original chain
+2016-08-09 18:40:46.025 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /client/1
+2016-08-09 18:40:46.057 DEBUG 5896 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException]
+2016-08-09 18:40:46.462 DEBUG 5896 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read [T] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@382faf51]
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] .w.s.m.m.a.ServletInvocableHandlerMethod : Error resolving argument [0] [type=com.example.domain.Client]
+HandlerMethod details: 
+Controller [com.example.controllers.ClientController]
+Method [public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException]
+
+
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:151) ~[spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:125) ~[spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:99) ~[spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:832) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:743) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:961) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:895) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:880) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:651) [tomcat-embed-core-8.0.36.jar:8.0.36]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843) [spring-webmvc-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [tomcat-embed-core-8.0.36.jar:8.0.36]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:120) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at com.example.filters.CsrfTokenToCookieFilter.doFilterInternal(CsrfTokenToCookieFilter.java:34) [classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:120) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176) [spring-security-web-4.0.4.RELEASE.jar:4.0.4.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at com.example.controllers.ClientControllerTest.testUpdateClient(ClientControllerTest.java:142) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_60]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_60]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_60]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_60]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:254) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193) [spring-test-4.2.7.RELEASE.jar:4.2.7.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) [surefire-junit4-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) [surefire-booter-2.18.1.jar:2.18.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.18.1.jar:2.18.1]
+
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolving exception from handler [public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException]: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] .w.s.m.a.ResponseStatusExceptionResolver : Resolving exception from handler [public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException]: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolving exception from handler [public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException]: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:40:46.494  WARN 5896 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public T com.example.controllers.GenericController.upadate(T,java.lang.Long) throws javassist.NotFoundException
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@7217a1d3: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@7217a1d3: Principal: com.example.adapters.AdminUserDetails@32b46831; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@0: RemoteIpAddress: 127.0.0.1; SessionId: 1; Granted Authorities: ROLE_ADMIN' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@3c3e363
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2016-08-09 18:40:46.494 DEBUG 5896 --- [           main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteClient" classname="com.example.controllers.ClientControllerTest" time="0">
+    <error message="result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements" type="org.springframework.dao.IncorrectResultSizeDataAccessException">org.springframework.dao.IncorrectResultSizeDataAccessException: result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:505)
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy113.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:206)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:78)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:100)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:91)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:462)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:440)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.findByUserName(Unknown Source)
+	at com.example.services.admin.AdminService.findByUserName(AdminService.java:29)
+	at com.example.controllers.ClientControllerTest.tesAdmin(ClientControllerTest.java:100)
+</error>
+    <system-out><![CDATA[2016-08-09 18:40:46.587 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.587 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.587 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:40:46.587 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:40:46.587 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:40:46.587  INFO 5896 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-08-09 18:40:46.587  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-08-09 18:40:46.603  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 16 ms
+Hibernate: 
+    insert 
+    into
+        Admin
+        (enabled, password, phone, userName) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.enabled as enabled2_1_,
+        admin0_.password as password3_1_,
+        admin0_.phone as phone4_1_,
+        admin0_.userName as userName5_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+]]></system-out>
+  </testcase>
+  <testcase name="testGetClient" classname="com.example.controllers.ClientControllerTest" time="0">
+    <error message="result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements" type="org.springframework.dao.IncorrectResultSizeDataAccessException">org.springframework.dao.IncorrectResultSizeDataAccessException: result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:505)
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy113.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:206)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:78)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:100)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:91)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:462)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:440)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.findByUserName(Unknown Source)
+	at com.example.services.admin.AdminService.findByUserName(AdminService.java:29)
+	at com.example.controllers.ClientControllerTest.tesAdmin(ClientControllerTest.java:100)
+</error>
+    <system-out><![CDATA[2016-08-09 18:40:46.681 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.681 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.681 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:40:46.681 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:40:46.681 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:40:46.681  INFO 5896 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-08-09 18:40:46.681  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-08-09 18:40:46.681  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: 
+    insert 
+    into
+        Admin
+        (enabled, password, phone, userName) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.enabled as enabled2_1_,
+        admin0_.password as password3_1_,
+        admin0_.phone as phone4_1_,
+        admin0_.userName as userName5_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateClient" classname="com.example.controllers.ClientControllerTest" time="0">
+    <error message="result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements" type="org.springframework.dao.IncorrectResultSizeDataAccessException">org.springframework.dao.IncorrectResultSizeDataAccessException: result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+	at org.hibernate.jpa.internal.QueryImpl.getSingleResult(QueryImpl.java:505)
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:368)
+	at com.sun.proxy.$Proxy113.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:206)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:78)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:100)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:91)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:462)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:440)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy97.findByUserName(Unknown Source)
+	at com.example.services.admin.AdminService.findByUserName(AdminService.java:29)
+	at com.example.controllers.ClientControllerTest.tesAdmin(ClientControllerTest.java:100)
+</error>
+    <system-out><![CDATA[2016-08-09 18:40:46.759 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.759 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-09 18:40:46.759 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-09 18:40:46.759 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-09 18:40:46.759 DEBUG 5896 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-09 18:40:46.759  INFO 5896 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-08-09 18:40:46.759  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-08-09 18:40:46.759  INFO 5896 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: 
+    insert 
+    into
+        Admin
+        (enabled, password, phone, userName) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.enabled as enabled2_1_,
+        admin0_.password as password3_1_,
+        admin0_.phone as phone4_1_,
+        admin0_.userName as userName5_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+]]></system-out>
+  </testcase>
+</testsuite>
