@@ -53,8 +53,9 @@ $(function () {
         var searchControl = new ymaps.control.SearchControl({
             options: {
                 // Будет производиться поиск и по топонимам и по организациям.
-                provider: 'yandex#search'б
-                
+                provider: 'yandex#search',
+                kind:'house',
+                boundedBy:[[50.946536, 23.969486],[50.45363,24.817244]]
             }
         });
         searchControl.events.add('resultselect', function (e) {
@@ -69,9 +70,7 @@ $(function () {
             });
         });
         myMap.controls.add(searchControl);
-        myMap.hint.open([50.736616, 24.162471],
-            'Будь ласка введіть адресу доставки замовлення'
-        );
+
     }
 
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({

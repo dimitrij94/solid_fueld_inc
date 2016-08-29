@@ -16,6 +16,11 @@ public abstract class GenericController<T> {
 
     public final static int pageSize = 50;
 
+    @RequestMapping(method = RequestMethod.GET, params = {"count"})
+    public long count(){
+        return getService().count();
+    }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public T find(@PathVariable("id") Long id) {
         return getService().find(id);

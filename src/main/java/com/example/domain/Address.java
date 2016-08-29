@@ -29,11 +29,11 @@ public class Address {
         this.building = building;
     }
 
-    @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9.-_]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
     @Size(min = 3, max = 25)
     private String city;
 
-    @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9.-_]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
     @Size(min = 3, max = 25)
     private String street;
 

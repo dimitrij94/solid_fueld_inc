@@ -18,7 +18,6 @@ import java.util.List;
 public class AddressService extends GenericService<Address> implements AddressServiceI {
     private final AddressRepository addressRepository;
 
-
     @Autowired
     public AddressService(AddressRepository addressRepository) {
         this.addressRepository = addressRepository;

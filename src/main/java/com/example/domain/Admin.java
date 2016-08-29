@@ -16,6 +16,7 @@ import java.util.Set;
  * Created by Dmitrij on 08.08.2016.
  */
 @Entity
+@Table(name = "Admin", uniqueConstraints = @UniqueConstraint(columnNames = {"userName"}))
 public class Admin {
 
     public Admin(String userName, String password, String phone, boolean enabled) {
@@ -46,7 +47,6 @@ public class Admin {
 
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-zA-Z])(?=\\S+$).*$")
     @Size(min = 8)
-    @JsonIgnore
     private String password;
 
     private String phone;

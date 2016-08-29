@@ -2,205 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3442eb86-506d-431f-80c0-6c4314e05a24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../resources/messages/messages_ru.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/1707946.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/2014051706482692742104.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/6950_lentochnaya_i_diskovaya_pilorama1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/about/bo_big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/header-bg-original.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/header-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/aetuts.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/creative-market.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/designmodo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/envato.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/microlancer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/themeforest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/wordpress.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/map-image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/dreams-preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/dreams.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/escape-preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/escape.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/golden-preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/golden.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/pini_key.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/roundicons-free.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/roundicons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/startup-framework-preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/startup-framework.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/treehouse-preview.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/portfolio/treehouse.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/team/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/team/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/team/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/constants/PricesNames.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/constants/Views.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/controllers/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/controllers/PricesController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/domain/Prices.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/repositories/AddressRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/repositories/PricesRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/services/PriceServiceI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/services/PricesService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/services/address/AddressService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../java/com/example/services/address/AddressServiceI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../resources/data.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/webapp_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webapp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin_home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/admin_home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/agency.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/agency.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/admin_page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/agency.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/agency.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/contact_me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jqBootstrapValidation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tarif_calculator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/agency.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mail/contact_me.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/admins_profiles.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/adapters/AdminAuthentication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/adapters/TokenAuthenticationService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/domain/MappedEntity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/domain/Person.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/filters/StatelessAuthenticationFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/filters/StatelessLoginFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/handlers/JwtAuthorizationHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/repositories/GenericPersonRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../java/com/example/services/person/PersonService.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/dataSources.ids" afterPath="$PROJECT_DIR$/../../../.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../../../.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_5.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_39.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_0_36.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_0_36.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_6.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_11_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_11_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_11_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_11_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_21.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_21.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_3_6_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_3_6_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_11_4_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_11_4_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_9_4_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_9_4_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_config_4_0_4_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_core_4_0_4_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_test_4_0_0_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_test_4_0_0_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_4_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_security_spring_security_web_4_0_4_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_aop_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_aop_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_aspects_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_aspects_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_beans_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_beans_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_context_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_context_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_context_support_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_context_support_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_core_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_core_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_expression_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_expression_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_orm_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_orm_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_test_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_test_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_tx_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_tx_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_web_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_web_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_7_RELEASE.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__org_yaml_snakeyaml_1_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="$PROJECT_DIR$/../../../.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../pom.xml" afterPath="$PROJECT_DIR$/../../../pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../solid_fueld_inc.iml" afterPath="$PROJECT_DIR$/../../../solid_fueld_inc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/SolidFuelIncApplication.java" afterPath="$PROJECT_DIR$/../java/com/example/SolidFuelIncApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/adapters/AdminUserDetails.java" afterPath="$PROJECT_DIR$/../java/com/example/adapters/AdminUserDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/adapters/MyUserDetailService.java" afterPath="$PROJECT_DIR$/../java/com/example/adapters/MyUserDetailService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/configuration/SecurityConfig.java" afterPath="$PROJECT_DIR$/../java/com/example/configuration/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/configuration/WebMvcConfig.java" afterPath="$PROJECT_DIR$/../java/com/example/configuration/WebMvcConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/constants/Authorities.java" afterPath="$PROJECT_DIR$/../java/com/example/constants/Authorities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/constants/OrderStatus.java" afterPath="$PROJECT_DIR$/../java/com/example/constants/OrderStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/controllers/ClientController.java" afterPath="$PROJECT_DIR$/../java/com/example/controllers/ClientController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/controllers/GenericController.java" afterPath="$PROJECT_DIR$/../java/com/example/controllers/GenericController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/controllers/OrderController.java" afterPath="$PROJECT_DIR$/../java/com/example/controllers/OrderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/domain/Address.java" afterPath="$PROJECT_DIR$/../java/com/example/domain/Address.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/domain/Admin.java" afterPath="$PROJECT_DIR$/../java/com/example/domain/Admin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../target/classes/com/example/domain/Client.class" afterPath="$PROJECT_DIR$/../../../target/classes/com/example/domain/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../target/classes/com/example/domain/ClientOrder.class" afterPath="$PROJECT_DIR$/../../../target/classes/com/example/domain/ClientOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../target/classes/com/example/services/address/AddressService.class" afterPath="$PROJECT_DIR$/../../../target/classes/com/example/services/address/AddressService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/domain/Client.java" afterPath="$PROJECT_DIR$/../java/com/example/domain/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/domain/ClientOrder.java" afterPath="$PROJECT_DIR$/../java/com/example/domain/ClientOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/repositories/AdminRepository.java" afterPath="$PROJECT_DIR$/../java/com/example/repositories/AdminRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/repositories/ClientOrderRepository.java" afterPath="$PROJECT_DIR$/../java/com/example/repositories/ClientOrderRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/repositories/ClientRepository.java" afterPath="$PROJECT_DIR$/../java/com/example/repositories/ClientRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/services/GenericService.java" afterPath="$PROJECT_DIR$/../java/com/example/services/GenericService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/services/ServiceI.java" afterPath="$PROJECT_DIR$/../java/com/example/services/ServiceI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/services/order/OrderService.java" afterPath="$PROJECT_DIR$/../java/com/example/services/order/OrderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/services/order/OrderServiceI.java" afterPath="$PROJECT_DIR$/../java/com/example/services/order/OrderServiceI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/utils/TestUtils.java" afterPath="$PROJECT_DIR$/../java/com/example/utils/TestUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../resources/application.properties" afterPath="$PROJECT_DIR$/../resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../test/java/com/example/SolidFuelIncApplicationTests.java" afterPath="$PROJECT_DIR$/../../test/java/com/example/SolidFuelIncApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../test/java/com/example/controllers/ClientControllerTest.java" afterPath="$PROJECT_DIR$/../../test/java/com/example/controllers/ClientControllerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../java/com/example/services/person/admin/AdminService.java" afterPath="$PROJECT_DIR$/../java/com/example/services/admin/AdminService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../java/com/example/services/person/admin/AdminServiceI.java" afterPath="$PROJECT_DIR$/../java/com/example/services/admin/AdminServiceI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../java/com/example/services/person/client/ClientService.java" afterPath="$PROJECT_DIR$/../java/com/example/services/client/ClientService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../java/com/example/services/person/client/ClientServiceI.java" afterPath="$PROJECT_DIR$/../java/com/example/services/client/ClientServiceI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/com/example/services/address/AddressService.java" afterPath="$PROJECT_DIR$/../java/com/example/services/address/AddressService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webapp.iml" afterPath="$PROJECT_DIR$/.idea/webapp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin_home.html" afterPath="$PROJECT_DIR$/admin_home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin_page.js" afterPath="$PROJECT_DIR$/js/admin_page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contact_me.js" afterPath="$PROJECT_DIR$/js/contact_me.js" />
     </list>
     <ignored path="webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -221,22 +35,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="admin_home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="391">
+              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+              <folding>
+                <element signature="n#md-sidenav#0;n#section#0;n#md-content#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_me.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/contact_me.js">
+      <file leaf-file-name="admin_page.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/admin_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="330" column="19" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+              <folding>
+                <element signature="e#1921#2382#0" expanded="false" />
+                <element signature="e#2420#2723#0" expanded="false" />
+                <element signature="e#2766#3911#0" expanded="false" />
+                <element signature="e#3963#5151#0" expanded="false" />
+                <element signature="e#5193#5565#0" expanded="false" />
+                <element signature="e#6418#7586#0" expanded="false" />
+                <element signature="e#7635#7638#0" expanded="false" />
+                <element signature="e#7721#7795#0" expanded="false" />
+                <element signature="e#7895#10391#0" expanded="false" />
+                <element signature="e#11611#13075#0" expanded="false" />
+                <element signature="e#13117#13469#0" expanded="false" />
+                <element signature="e#13509#13927#0" expanded="false" />
+                <element signature="e#13968#14694#0" expanded="false" />
+                <element signature="e#14741#15330#0" expanded="false" />
+                <element signature="e#15398#15440#0" expanded="false" />
+                <element signature="e#15487#15538#0" expanded="false" />
+                <element signature="e#15597#15935#0" expanded="false" />
+                <element signature="e#15996#16160#0" expanded="false" />
+                <element signature="e#16221#16336#0" expanded="false" />
+                <element signature="e#16271#16332#0" expanded="false" />
+                <marker date="1472386534804" expanded="true" signature="12500:12626" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -269,15 +107,15 @@
         <option value="$PROJECT_DIR$/templates/orders_addresses_list.html" />
         <option value="$PROJECT_DIR$/templates/orders_list.html" />
         <option value="$PROJECT_DIR$/templates/order.html" />
-        <option value="$PROJECT_DIR$/js/admin_page.js" />
         <option value="$PROJECT_DIR$/templates/received_orders.html" />
         <option value="$PROJECT_DIR$/templates/accepted_orders.html" />
         <option value="$PROJECT_DIR$/css/admin_home.css" />
-        <option value="$PROJECT_DIR$/admin_home.html" />
         <option value="$PROJECT_DIR$/templates/budget.html" />
         <option value="$PROJECT_DIR$/templates/admins_profiles.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/contact_me.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/admin_home.html" />
+        <option value="$PROJECT_DIR$/js/admin_page.js" />
       </list>
     </option>
   </component>
@@ -473,34 +311,35 @@
       <workItem from="1472286704657" duration="586000" />
       <workItem from="1472305808905" duration="4246000" />
       <workItem from="1472320430022" duration="8101000" />
-      <workItem from="1472373078186" duration="1410000" />
+      <workItem from="1472373078186" duration="5669000" />
+      <workItem from="1472386240796" duration="457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160237000" />
+    <option name="totallyTimeSpent" value="164953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24701492" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24701492" sideWeight="0.49436393" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24701492" sideWeight="0.5056361" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -532,6 +371,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1921#2382#0" expanded="false" />
+            <element signature="e#2420#2723#0" expanded="false" />
+            <element signature="e#2766#3911#0" expanded="false" />
+            <element signature="e#3963#5151#0" expanded="false" />
+            <element signature="e#5193#5565#0" expanded="false" />
+            <element signature="e#6418#7586#0" expanded="false" />
+            <element signature="e#7635#7638#0" expanded="false" />
+            <element signature="e#7721#7795#0" expanded="false" />
+            <element signature="e#7895#10391#0" expanded="false" />
+            <element signature="e#11611#13075#0" expanded="false" />
+            <element signature="e#13117#13469#0" expanded="false" />
+            <element signature="e#13509#13927#0" expanded="false" />
+            <element signature="e#13968#14694#0" expanded="false" />
+            <element signature="e#14741#15330#0" expanded="false" />
+            <element signature="e#15398#15440#0" expanded="false" />
+            <element signature="e#15487#15538#0" expanded="false" />
+            <element signature="e#15597#15935#0" expanded="false" />
+            <element signature="e#15996#16160#0" expanded="false" />
+            <element signature="e#16221#16336#0" expanded="false" />
+            <element signature="e#16271#16332#0" expanded="false" />
+            <marker date="1472386534804" expanded="true" signature="12500:12626" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,6 +422,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1921#2382#0" expanded="false" />
+            <element signature="e#2420#2723#0" expanded="false" />
+            <element signature="e#2766#3911#0" expanded="false" />
+            <element signature="e#3963#5151#0" expanded="false" />
+            <element signature="e#5193#5565#0" expanded="false" />
+            <element signature="e#6418#7586#0" expanded="false" />
+            <element signature="e#7635#7638#0" expanded="false" />
+            <element signature="e#7721#7795#0" expanded="false" />
+            <element signature="e#7895#10391#0" expanded="false" />
+            <element signature="e#11611#13075#0" expanded="false" />
+            <element signature="e#13117#13469#0" expanded="false" />
+            <element signature="e#13509#13927#0" expanded="false" />
+            <element signature="e#13968#14694#0" expanded="false" />
+            <element signature="e#14741#15330#0" expanded="false" />
+            <element signature="e#15398#15440#0" expanded="false" />
+            <element signature="e#15487#15538#0" expanded="false" />
+            <element signature="e#15597#15935#0" expanded="false" />
+            <element signature="e#15996#16160#0" expanded="false" />
+            <element signature="e#16221#16336#0" expanded="false" />
+            <element signature="e#16271#16332#0" expanded="false" />
+            <marker date="1472386534804" expanded="true" signature="12500:12626" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -824,27 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/budget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#md-input-container#0;n#md-input-group#0;n#form#0;n#md-whiteframe#0;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -852,23 +720,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/contact_me.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="-85">
+          <caret line="57" column="71" selection-start-line="57" selection-start-column="71" selection-end-line="57" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="353" column="85" selection-start-line="353" selection-start-column="85" selection-end-line="353" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="n#md-sidenav#0;n#section#0;n#md-content#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="330" column="19" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+          <folding>
+            <element signature="e#1921#2382#0" expanded="false" />
+            <element signature="e#2420#2723#0" expanded="false" />
+            <element signature="e#2766#3911#0" expanded="false" />
+            <element signature="e#3963#5151#0" expanded="false" />
+            <element signature="e#5193#5565#0" expanded="false" />
+            <element signature="e#6418#7586#0" expanded="false" />
+            <element signature="e#7635#7638#0" expanded="false" />
+            <element signature="e#7721#7795#0" expanded="false" />
+            <element signature="e#7895#10391#0" expanded="false" />
+            <element signature="e#11611#13075#0" expanded="false" />
+            <element signature="e#13117#13469#0" expanded="false" />
+            <element signature="e#13509#13927#0" expanded="false" />
+            <element signature="e#13968#14694#0" expanded="false" />
+            <element signature="e#14741#15330#0" expanded="false" />
+            <element signature="e#15398#15440#0" expanded="false" />
+            <element signature="e#15487#15538#0" expanded="false" />
+            <element signature="e#15597#15935#0" expanded="false" />
+            <element signature="e#15996#16160#0" expanded="false" />
+            <element signature="e#16221#16336#0" expanded="false" />
+            <element signature="e#16271#16332#0" expanded="false" />
+            <marker date="1472386534804" expanded="true" signature="12500:12626" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

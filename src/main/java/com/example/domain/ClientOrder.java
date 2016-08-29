@@ -17,25 +17,20 @@ public class ClientOrder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonView(Views.OrderWithClientView.class)
     private Long id;
 
     @NotNull
-    @JsonView(Views.OrderWithClientView.class)
     private Integer quantityKG;
 
     @Enumerated(EnumType.ORDINAL)
-    @JsonView(Views.OrderWithClientView.class)
     private OrderStatus status;
 
     @Past
     @Temporal(TemporalType.TIMESTAMP)
-    @JsonView(Views.OrderWithClientView.class)
     private Date orderMade;
 
     @Past
     @Temporal(TemporalType.TIMESTAMP)
-    @JsonView(Views.OrderWithClientView.class)
     private Date orderClosed;
 
     @ManyToOne

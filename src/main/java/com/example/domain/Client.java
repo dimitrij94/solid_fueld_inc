@@ -2,7 +2,6 @@ package com.example.domain;
 
 import com.example.constants.Views;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
@@ -34,25 +33,26 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @JsonView(Views.OrderWithClientView.class)
+    @JsonView(Views.ClientWithAddress.class)
     private Long id;
 
     @Email
     @NotBlank
-    @JsonView(Views.OrderWithClientView.class)
+    @JsonView(Views.ClientWithAddress.class)
     private String email;
 
     @Size(min = 2, max = 30)
     @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
-    @JsonView(Views.OrderWithClientView.class)
+    @JsonView(Views.ClientWithAddress.class)
     private String name;
 
     @NotBlank
-    @JsonView(Views.OrderWithClientView.class)
+    @JsonView(Views.ClientWithAddress.class)
     private String phone;
 
     @OneToMany(mappedBy = "client")
-    @JsonView(Views.OrderWithClientView.class)
+    @JsonIgnore
+    @JsonView(Views.ClientWithAddress.class)
     private List<Address> address;
 
     @OneToMany(mappedBy = "client")

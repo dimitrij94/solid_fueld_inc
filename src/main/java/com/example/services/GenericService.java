@@ -22,6 +22,11 @@ public abstract class GenericService<T> implements ServiceI<T> {
     }
 
     @Override
+    public long count() {
+        return getRepository().count();
+    }
+
+    @Override
     @Transactional
     public T save(T entity) {
         return getRepository().save(entity);

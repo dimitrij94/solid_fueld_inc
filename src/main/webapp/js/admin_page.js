@@ -166,11 +166,11 @@ app.directive('orderForm', function () {
     }
 });
 
-app.controller('appController', ['$scope', '$mdSidenav', 'sidenavTitle','$timeout', function ($scope, $mdSidenav, sidenavTitle,$timeout) {
+app.controller('appController', ['$scope', '$mdSidenav', 'sidenavTitle', '$timeout', function ($scope, $mdSidenav, sidenavTitle, $timeout) {
     $scope.getTitle = function () {
         return sidenavTitle.title;
     };
-    
+
     $scope.toggleLeft = buildDelayedToggler('left');
     function debounce(func, wait, context) {
         var timer;
@@ -228,7 +228,7 @@ app.controller('navigator', ['$scope', 'Credentials', '$location', 'navigation',
     }]);
 app.controller('loginController', function () {
 });
-app.controller("receivedOrders", ['$scope', 'orders', function ($scope, orders) {
+app.controller("receivedOrders", ['$scope', 'orders', 'Order', function ($scope, orders, Order) {
     $scope.orders = orders['content'];
     $scope.currentOrder = null;
 }]);
@@ -303,8 +303,8 @@ app.controller("acceptedOrders", ['$scope', 'orders', 'Order', function ($scope,
 app.controller("adminsProfiles", ["$scope", "Admin", "admins", function ($scope, Admin, admins) {
     $scope.admins = admins['content'];
     $scope.activeAdmin = undefined;
-    $scope.getClass = function(admin){
-        switch (admin.authorities){
+    $scope.getClass = function (admin) {
+        switch (admin.authorities) {
             case "SUPER_ADMIN":
                 return "person";
             case "ADMIN":
@@ -312,12 +312,27 @@ app.controller("adminsProfiles", ["$scope", "Admin", "admins", function ($scope,
         }
     };
     $scope.newAdmin = {};
-    
+
     $scope.makeActive = function (admin) {
         $scope.activeAdmin = admin;
     };
     $scope.updateAdmin = function (admin) {
         Admin.update({id: admin.id}, admin);
+    };
+    $scope.deleteAdmin = function (admin) {
+        Admin.delete({id: admin.id}, function () {
+            $scope.admins = $scope.admins.filter(function (a) {
+                return a.id != admin.id;
+            });
+            $scope.activeAdmin = undefined;
+        })
+    };
+    $scope.createAdmin = function (admin) {
+        admin.authorities = "ADMIN";
+        Admin.save(admin, function (responce) {
+            $scope.admins.push(responce);
+            $scope.activeAdmin = undefined;
+        });
     };
 }]);
 app.controller("budget", ['$scope', 'prices', 'Prices', "Order", function ($scope, prices, Prices, Order) {
@@ -426,10 +441,10 @@ app.service('navigation', function () {
             path: "/orders/budget"
         },
         {
-            mdClass:'supervisor_account',
-            header:'Налаштування',
-            subheader:"Змінити ",
-            path:"/admin/settings"
+            mdClass: 'supervisor_account',
+            header: 'Налаштування',
+            subheader: "Змінити ",
+            path: "/admin/settings"
         }];
 });
 app.service('Credentials', function ($http) {
@@ -452,7 +467,48 @@ app.service('Credentials', function ($http) {
 app.service('sidenavTitle', ['navigation', function (navigation) {
     this.title = navigation[1].header;
 }]);
+app.factory("DynamicResource", function () {
+    var self = function (resourse, status) {
+        this.resourse = resourse;
+        this.status = status;
+        this.loadedPages = [];
+        this.totalNumItems = 0;
+        this.numItems = 0;
+        this.PAGE_SIZE = 50;
+        this.fetchNumItems_();
+        this.fetchPage_(0);
 
+    };
+    // Required.
+    self.prototype.getItemAtIndex = function (index) {
+        var pageNumber = Math.floor(index / this.PAGE_SIZE);
+        var page = this.loadedPages[pageNumber];
+        if (page) {
+            return page[index % this.PAGE_SIZE];
+        } else if (page !== null) {
+            this.fetchPage_(pageNumber);
+        }
+    };
+    self.prototype.getLength = function () {
+        return this.totalNumItems;
+    };
+
+    self.prototype.fetchPage_ = function (pageNumber) {
+        this.loadedPages[pageNumber] = [];
+        this.resourse.get({
+            page: pageNumber,
+            status: this.status
+        }).$promise.then(angular.bind(this, function (responce) {
+            this.loadedPages[pageNumber] = responce['content'];
+        }));
+    };
+    self.prototype.fetchNumItems_ = function () {
+        this.resourse.get({count: true}).$promise.then(angular.bind(this, function (response) {
+            this.totalNumItems = response;
+        }));
+    };
+    return self;
+});
 app.factory('Admin', function ($resource) {
     return $resource('/admin/:id', {id: '@id'})
 });

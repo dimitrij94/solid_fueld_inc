@@ -12,4 +12,5 @@ public interface ServiceI<T> {
     T find(Long id);
     T update(T entity, Long id) throws NotFoundException;
     void delete(Long id) throws NotFoundException;
+    long count();
 }
