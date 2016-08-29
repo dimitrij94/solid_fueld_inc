@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.controllers.ClientControllerTest" time="6.454" tests="4" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2016.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="E:\Programs\Java\jdk_1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.60-b23"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="idea.launcher.port" value="7532"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Projects\KeyStyleMysql\solid_fueld_inc"/>
+    <property name="java.runtime.version" value="1.8.0_60-b27"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="E:\Programs\Java\jdk_1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Dmitrij\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="E:\Programs\Java\jdk_1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;E:\Programs\Java\jdk_1.8\bin;E:\Programs\Brackets\command;E:\Programs\Node.js\;C:\Users\Dmitrij\AppData\Roaming\npm;C:\Users\Dmitrij\AppData\Local\Programs\Python\Python35;E:\Programs\jEdit;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Dmitrij\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\Programs\Git\cmd;C:\Program Files (x86)\sbt\\bin;E:\Programs\apache-maven-3.3.9\bin;C:\Program Files (x86)\Skype\Phone\;E:\Programs\Anaconda2;E:\Programs\Anaconda2\Scripts;C:\Users\Dmitrij\AppData\Roaming\npm;E:\Programs\Anaconda2\envs\py3k;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\Dmitrij"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="idea.launcher.bin.path" value="E:\Programs\IntelliJ IDEA 2016.2\bin"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Dmitrij"/>
+    <property name="java.class.path" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.4.jar;E:\Programs\IntelliJ IDEA 2016.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="E:\Programs\Java\jdk_1.8\jre"/>
+    <property name="sun.java.command" value="com.intellij.rt.execution.application.AppMain org.codehaus.classworlds.Launcher -Didea.version=2016.2 package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_60"/>
+    <property name="java.ext.dirs" value="E:\Programs\Java\jdk_1.8\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="E:\Programs\Java\jdk_1.8\jre\lib\resources.jar;E:\Programs\Java\jdk_1.8\jre\lib\rt.jar;E:\Programs\Java\jdk_1.8\jre\lib\sunrsasign.jar;E:\Programs\Java\jdk_1.8\jre\lib\jsse.jar;E:\Programs\Java\jdk_1.8\jre\lib\jce.jar;E:\Programs\Java\jdk_1.8\jre\lib\charsets.jar;E:\Programs\Java\jdk_1.8\jre\lib\jfr.jar;E:\Programs\Java\jdk_1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\Programs\IntelliJ IDEA 2016.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testUpdateClient" classname="com.example.controllers.ClientControllerTest" time="4.069"/>
+  <testcase name="testDeleteClient" classname="com.example.controllers.ClientControllerTest" time="0.151"/>
+  <testcase name="testGetClient" classname="com.example.controllers.ClientControllerTest" time="1.656"/>
+  <testcase name="testCreateClient" classname="com.example.controllers.ClientControllerTest" time="0.578">
+    <error message="The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!" type="org.springframework.dao.InvalidDataAccessApiUsageException">org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:115)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findOne(SimpleJpaRepository.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:483)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:468)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:440)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:131)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy106.findOne(Unknown Source)
+	at com.example.services.GenericService.find(GenericService.java:37)
+	at com.example.services.GenericService.delete(GenericService.java:52)
+	at com.example.controllers.ClientControllerTest.testCreateClient(ClientControllerTest.java:95)
+</error>
+    <system-out><![CDATA[2016-08-28 21:18:43.873 DEBUG 288 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-08-28 21:18:43.873 DEBUG 288 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-08-28 21:18:43.874 DEBUG 288 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-08-28 21:18:43.874 DEBUG 288 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-08-28 21:18:43.874 DEBUG 288 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-08-28 21:18:43.874  INFO 288 --- [           main] o.s.b.test.SpringBootMockServletContext  : Initializing Spring FrameworkServlet ''
+2016-08-28 21:18:43.874  INFO 288 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-08-28 21:18:43.881  INFO 288 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 7 ms
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 1 of 13 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 2 of 13 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] w.c.HttpSessionSecurityContextRepository : HttpSession returned null object for SPRING_SECURITY_CONTEXT
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: org.springframework.mock.web.MockHttpSession@20be890d. A new one will be created.
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 3 of 13 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@184de357
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 4 of 13 in additional filter chain; firing Filter: 'CsrfFilter'
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 5 of 13 in additional filter chain; firing Filter: 'CsrfTokenToCookieFilter'
+2016-08-28 21:18:43.896 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 6 of 13 in additional filter chain; firing Filter: 'LogoutFilter'
+2016-08-28 21:18:43.897 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/client'; against '/logout'
+2016-08-28 21:18:43.897 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 7 of 13 in additional filter chain; firing Filter: 'BasicAuthenticationFilter'
+2016-08-28 21:18:43.897 DEBUG 288 --- [           main] o.s.s.w.a.www.BasicAuthenticationFilter  : Basic Authentication Authorization header found for user 'Dimitrij94'
+2016-08-28 21:18:43.897 DEBUG 288 --- [           main] o.s.s.authentication.ProviderManager     : Authentication attempt using org.springframework.security.authentication.dao.DaoAuthenticationProvider
+Hibernate: 
+    select
+        admin0_.id as id1_1_,
+        admin0_.authorities as authorit2_1_,
+        admin0_.enabled as enabled3_1_,
+        admin0_.password as password4_1_,
+        admin0_.phone as phone5_1_,
+        admin0_.userName as userName6_1_ 
+    from
+        Admin admin0_ 
+    where
+        admin0_.userName=?
+2016-08-28 21:18:44.024 DEBUG 288 --- [           main] o.s.s.w.a.www.BasicAuthenticationFilter  : Authentication success: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@afd2abee: Principal: com.example.adapters.AdminUserDetails@2c815fdc; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 7; Granted Authorities: ROLE_SUPER_ADMIN
+2016-08-28 21:18:44.024 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 8 of 13 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2016-08-28 21:18:44.024 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 9 of 13 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2016-08-28 21:18:44.024 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 10 of 13 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2016-08-28 21:18:44.024 DEBUG 288 --- [           main] o.s.s.w.a.AnonymousAuthenticationFilter  : SecurityContextHolder not populated with anonymous token, as it already contained: 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken@afd2abee: Principal: com.example.adapters.AdminUserDetails@2c815fdc; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 7; Granted Authorities: ROLE_SUPER_ADMIN'
+2016-08-28 21:18:44.025 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 11 of 13 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2016-08-28 21:18:44.025 DEBUG 288 --- [           main] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.authentication.session.ChangeSessionIdAuthenticationStrategy@4e3283f6
+2016-08-28 21:18:44.025 DEBUG 288 --- [           main] s.CompositeSessionAuthenticationStrategy : Delegating to org.springframework.security.web.csrf.CsrfAuthenticationStrategy@5d84e363
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@afd2abee: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@afd2abee: Principal: com.example.adapters.AdminUserDetails@2c815fdc; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 7; Granted Authorities: ROLE_SUPER_ADMIN' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@20be890d
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 12 of 13 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client at position 13 of 13 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /client' doesn't match 'GET /admin/**
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /client' doesn't match 'GET /admin
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/client'; against '/admin'
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /client' doesn't match 'PUT /admin
+2016-08-28 21:18:44.026 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /client' doesn't match 'DELETE /admin
+2016-08-28 21:18:44.027 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/client'; against '/order'
+2016-08-28 21:18:44.027 DEBUG 288 --- [           main] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/client'; against '/client'
+2016-08-28 21:18:44.027 DEBUG 288 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /client; Attributes: [permitAll]
+2016-08-28 21:18:44.027 DEBUG 288 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@afd2abee: Principal: com.example.adapters.AdminUserDetails@2c815fdc; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 7; Granted Authorities: ROLE_SUPER_ADMIN
+2016-08-28 21:18:44.182 DEBUG 288 --- [           main] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@7417ef4f, returned: 1
+2016-08-28 21:18:44.182 DEBUG 288 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2016-08-28 21:18:44.182 DEBUG 288 --- [           main] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2016-08-28 21:18:44.183 DEBUG 288 --- [           main] o.s.security.web.FilterChainProxy        : /client reached end of additional filter chain; proceeding with original chain
+2016-08-28 21:18:44.183 DEBUG 288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /client
+2016-08-28 21:18:44.183 DEBUG 288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public T com.example.controllers.GenericController.post(T)]
+2016-08-28 21:18:44.185 DEBUG 288 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read [T] as "application/json;charset=UTF-8" with [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@48fc0211]
+Hibernate: 
+    insert 
+    into
+        Client
+        (email, name, phone) 
+    values
+        (?, ?, ?)
+2016-08-28 21:18:44.259 DEBUG 288 --- [           main] w.c.HttpSessionSecurityContextRepository : SecurityContext 'org.springframework.security.core.context.SecurityContextImpl@afd2abee: Authentication: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@afd2abee: Principal: com.example.adapters.AdminUserDetails@2c815fdc; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@380f4: RemoteIpAddress: 127.0.0.1; SessionId: 7; Granted Authorities: ROLE_SUPER_ADMIN' stored to HttpSession: 'org.springframework.mock.web.MockHttpSession@20be890d
+2016-08-28 21:18:44.259 DEBUG 288 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Written [com.example.domain.Client@5c0e2ec] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@48fc0211]
+2016-08-28 21:18:44.265 DEBUG 288 --- [           main] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2016-08-28 21:18:44.265 DEBUG 288 --- [           main] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+]]></system-out>
+  </testcase>
+</testsuite>

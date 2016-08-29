@@ -1,8 +1,10 @@
 package com.example.services.order;
 
+import com.example.constants.OrderStatus;
 import com.example.domain.ClientOrder;
 import com.example.services.ServiceI;
 import javassist.NotFoundException;
+import org.springframework.data.domain.Page;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 
@@ -11,18 +13,18 @@ import org.springframework.security.access.prepost.PreAuthorize;
  */
 public interface OrderServiceI extends ServiceI<ClientOrder> {
     @Override
-    @PreAuthorize("hasRole('ROLE_CLIENT')||hasRole('ROLE_ADMIN')")
     ClientOrder save(ClientOrder entity);
 
     @Override
-    @PostAuthorize("(hasRole('ROLE_CLIENT')&&returnObject.client.id==principal.client.id)||hasRole('ROLE_ADMIN')")
     ClientOrder find(Long id);
 
     @Override
-    @PreAuthorize("(hasRole('ROLE_CLIENT') && #entity.client.id==principal.client.id)||hasRole('ROLE_ADMIN')")
     ClientOrder update(ClientOrder entity, Long id) throws NotFoundException;
 
     @Override
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
     void delete(Long id) throws NotFoundException;
+
+    Page<ClientOrder> query(int page, int numResults, OrderStatus status);
+
+    Page<ClientOrder> query(int page, int numResults, Long clientId);
 }

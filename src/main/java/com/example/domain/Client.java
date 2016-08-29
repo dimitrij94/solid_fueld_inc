@@ -1,55 +1,79 @@
 package com.example.domain;
 
-import com.example.constants.Authorities;
+import com.example.constants.Views;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
+import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.validation.constraints.NotNull;
+import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.*;
 
-/**
- * Created by Dmitrij on 24.07.2016.
- */
 @Entity
-public class Client extends MappedEntity {
+@Table(name = "Client", uniqueConstraints = @UniqueConstraint(columnNames = {"name", "email", "phone"}))
+public class Client {
+
     public Client() {
     }
 
-    public Client(String firstName, String lastName, Address clientAddress) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = Collections.singletonList(clientAddress);
+    public Client(String email, String name, Address address, String phone) {
+        this.email = email;
+        this.name = name;
+        this.address = Collections.singletonList(address);
+        this.phone = phone;
     }
 
-    @Size(min = 2, max = 30)
-    @Pattern(regexp = "^[a-zА-Я-_]*&")
-    private String firstName;
+    public Client(String email, String name, String phone) {
+        this.email = email;
+        this.name = name;
+        this.phone = phone;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @JsonView(Views.ClientWithAddress.class)
+    private Long id;
+
+    @Email
+    @NotBlank
+    @JsonView(Views.ClientWithAddress.class)
+    private String email;
 
     @Size(min = 2, max = 30)
-    @Pattern(regexp = "^[a-zА-Я-_]*&")
-    private String lastName;
+    @Pattern(regexp = "^(([а-яіІА-ЯїЇєЄёЁa-zA-Z0-9]+)([\t ])*)+$", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @JsonView(Views.ClientWithAddress.class)
+    private String name;
+
+    @NotBlank
+    @JsonView(Views.ClientWithAddress.class)
+    private String phone;
 
     @OneToMany(mappedBy = "client")
+    @JsonIgnore
+    @JsonView(Views.ClientWithAddress.class)
     private List<Address> address;
 
     @OneToMany(mappedBy = "client")
+    @JsonIgnore
     private List<ClientOrder> orders;
 
-    private transient static Set<GrantedAuthority> authorities = new HashSet<>(2);
 
-    static {
-        authorities.add(new SimpleGrantedAuthority(Authorities.ROLE_CLIENT));
-        authorities.add(new SimpleGrantedAuthority(Authorities.ROLE_VISITOR));
+    public String getEmail() {
+        return email;
     }
 
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return authorities;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public List<Address> getAddress() {
@@ -60,20 +84,12 @@ public class Client extends MappedEntity {
         this.address = address;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String name) {
-        this.firstName = name;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<ClientOrder> getOrders() {
@@ -84,4 +100,11 @@ public class Client extends MappedEntity {
         this.orders = orders;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }

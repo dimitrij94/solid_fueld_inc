@@ -1,17 +1,19 @@
 package com.example.controllers;
 
 import com.example.SolidFuelIncApplication;
-import com.example.adapters.AdminUserDetails;
-import com.example.adapters.TokenAuthenticationService;
 import com.example.configuration.PersistenceConfig;
 import com.example.configuration.SecurityConfig;
 import com.example.configuration.WebMvcConfig;
 import com.example.domain.Address;
 import com.example.domain.Admin;
 import com.example.domain.Client;
-import com.example.handlers.JwtAuthorizationHandler;
+import com.example.services.admin.AdminServiceI;
+import com.example.services.client.ClientServiceI;
 import com.example.utils.TestUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import javassist.NotFoundException;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +36,8 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
@@ -56,7 +59,10 @@ public class ClientControllerTest {
     private MockMvc mockMvc;
 
     @Autowired
-    private JwtAuthorizationHandler handler;
+    AdminServiceI adminService;
+
+    @Autowired
+    ClientServiceI clientService;
 
     @Autowired
     private TestUtils testUtils;
@@ -64,30 +70,67 @@ public class ClientControllerTest {
     @Resource
     private WebApplicationContext webApplicationContext;
 
-    private Client mockClient;
-    private Address mockAddress;
+    private final Address mockAddress = new Address("Kyiv", "Vasylkob srt.", 53);
+    private Client mockClient = new Client("dima.kost.94@gmail.com", "Dmitriy Kostiushko", mockAddress, "0989785514");
+    private final Client mockInvalidClient = new Client(null, null, null, null);
+
     private byte[] mockJsonClient;
-    private Admin admin;
-    private String adminCredentials;
+    private final String adminName = "Dimitrij94";
+    private final String adminPassword = "d147896325";
 
     @PostConstruct
     public void setUp() throws JsonProcessingException {
-        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).addFilter(filterChain).build();
-        mockAddress = new Address("Kyiv", "Vasylkob srt.", 53);
-        mockClient = new Client("Dmitriy", "Kostiushko", mockAddress);
         mockJsonClient = testUtils.convertToJson(mockClient);
-        admin = new Admin("Dimitrij94", "d147896325", "380989785514", true);
-        adminCredentials = handler.clientDetailsToToken(new AdminUserDetails(admin));
+        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).addFilter(filterChain).build();
     }
 
     @Test
     public void testCreateClient() throws Exception {
         mockMvc.perform(post("/client")
                 .with(csrf().asHeader())
-                .header(TokenAuthenticationService.AUTH_HEADER_NAME, adminCredentials)
+                .with(httpBasic(adminName, adminPassword))
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(mockJsonClient))
                 .andExpect(status().isOk());
+        clientService.delete(mockClient.getId());
+    }
+
+
+    @Test
+    public void testGetClient() throws Exception {
+        mockClient = clientService.save(mockClient);
+        mockMvc.perform(get("/client/" + mockClient.getId())
+                .with(csrf().asHeader())
+                .with(httpBasic(adminName, adminPassword))
+                .contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk());
+        clientService.delete(mockClient.getId());
+    }
+
+    @Test
+    public void testDeleteClient() throws Exception {
+        mockClient = clientService.save(mockClient);
+        mockMvc.perform(delete("/client/" + mockClient.getId())
+                .with(csrf().asHeader())
+                .with(httpBasic(adminName, adminPassword))
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+        ).andExpect(status().isOk());
+        assert clientService.find(mockClient.getId()) == null;
+    }
+
+    @Test
+    public void testUpdateClient() throws Exception {
+        Client client = clientService.save(mockClient);
+        String testName = "Test";
+        client.setName(testName);
+        mockMvc.perform(put("/client/" + client.getId())
+                .with(csrf().asHeader())
+                .with(httpBasic(adminName, adminPassword))
+                .content(testUtils.convertToJson(client))
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+        ).andExpect(status().isOk());
+        assert clientService.find(client.getId()).getName().equals(testName);
+        clientService.delete(client.getId());
     }
 
 

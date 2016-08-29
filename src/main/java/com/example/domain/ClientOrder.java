@@ -1,40 +1,65 @@
 package com.example.domain;
 
 import com.example.constants.OrderStatus;
-import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.data.annotation.CreatedBy;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
+import com.example.constants.Views;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
  * Created by Dmitrij on 24.07.2016.
  */
 @Entity
-public class ClientOrder extends MappedEntity {
+public class ClientOrder {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     @NotNull
     private Integer quantityKG;
-    private String requestContent;
 
     @Enumerated(EnumType.ORDINAL)
     private OrderStatus status;
 
     @Past
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date orderMade;
 
     @Past
-    @Temporal(TemporalType.DATE)
+    @Temporal(TemporalType.TIMESTAMP)
     private Date orderClosed;
 
     @ManyToOne
-    @JoinColumn(name = "client")
+    @JoinColumn(name = "client_id")
     private Client client;
+
+    @ManyToOne
+    @JoinColumn(name = "client_address_id")
+    private Address orderAddress;
+
+    public ClientOrder() {
+        this.orderMade = new Date(System.currentTimeMillis());
+        this.status = OrderStatus.RECEIVED;
+    }
+
+    public ClientOrder(Integer quantityKG, String message, Client client) {
+        this.client = client;
+        this.quantityKG = quantityKG;
+        this.orderMade = new Date(System.currentTimeMillis());
+        this.status = OrderStatus.RECEIVED;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Integer getQuantityKG() {
         return quantityKG;
@@ -42,14 +67,6 @@ public class ClientOrder extends MappedEntity {
 
     public void setQuantityKG(Integer quantityKG) {
         this.quantityKG = quantityKG;
-    }
-
-    public String getRequestContent() {
-        return requestContent;
-    }
-
-    public void setRequestContent(String requestContent) {
-        this.requestContent = requestContent;
     }
 
     public OrderStatus getStatus() {
@@ -82,5 +99,13 @@ public class ClientOrder extends MappedEntity {
 
     public void setClient(Client client) {
         this.client = client;
+    }
+
+    public Address getOrderAddress() {
+        return orderAddress;
+    }
+
+    public void setOrderAddress(Address orderAddress) {
+        this.orderAddress = orderAddress;
     }
 }

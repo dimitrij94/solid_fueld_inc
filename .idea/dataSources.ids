@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - solid_fuel@localhost" uuid="36f7350e-ff2d-4d80-8819-e4e3e05ef3bc">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  <data-source name="MySQL - solid_fuel@localhost" uuid="915e114e-998d-4610-8b6b-ff7036a882c9">
+    <database-info product="MySQL" version="5.5.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
       <schema id="1" name="solid_fuel">
         <visible>1</visible>
@@ -12,6 +16,182 @@
       <schema id="5" name="mysql"/>
       <schema id="6" name="performance_schema"/>
       <schema id="7" name="phpmyadmin"/>
+      <table id="8" parent="1" name="address"/>
+      <table id="9" parent="1" name="admin"/>
+      <table id="10" parent="1" name="client"/>
+      <table id="11" parent="1" name="clientorder"/>
+      <table id="12" parent="1" name="prices"/>
+      <column id="13" parent="8" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="14" parent="8" name="building">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="15" parent="8" name="city">
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="16" parent="8" name="latitude">
+        <mandatory>1</mandatory>
+        <data-type>float|0</data-type>
+      </column>
+      <column id="17" parent="8" name="longitude">
+        <mandatory>1</mandatory>
+        <data-type>float|0</data-type>
+      </column>
+      <column id="18" parent="8" name="street">
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="19" parent="8" name="client_id">
+        <data-type>bigint(20)|0</data-type>
+      </column>
+      <index id="20" parent="8" name="FK_awoxuba1gairjptxcidc24vhs">
+        <columns>client_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="21" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="22" parent="8" name="FK_awoxuba1gairjptxcidc24vhs">
+        <columns>client_id</columns>
+        <ref-key>~.client.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="23" parent="9" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="24" parent="9" name="enabled">
+        <mandatory>1</mandatory>
+        <data-type>bit(1)|0</data-type>
+      </column>
+      <column id="25" parent="9" name="password">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="26" parent="9" name="phone">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="27" parent="9" name="userName">
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <key id="28" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="29" parent="10" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="30" parent="10" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="31" parent="10" name="name">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="32" parent="10" name="phone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <index id="33" parent="10" name="UK_50j20330i7xbnqskyhlb68q39">
+        <columns>name
+email
+phone</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="34" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="35" parent="10" name="UK_50j20330i7xbnqskyhlb68q39">
+        <columns>name
+email
+phone</columns>
+        <underlying-index>UK_50j20330i7xbnqskyhlb68q39</underlying-index>
+      </key>
+      <column id="36" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="37" parent="11" name="message">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="38" parent="11" name="orderClosed">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="39" parent="11" name="orderMade">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="40" parent="11" name="quantityKG">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="41" parent="11" name="status">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="42" parent="11" name="client_id">
+        <data-type>bigint(20)|0</data-type>
+      </column>
+      <column id="43" parent="11" name="client_address_id">
+        <data-type>bigint(20)|0</data-type>
+      </column>
+      <index id="44" parent="11" name="FK_4cq6gf373yn3udfkcci2u4tkq">
+        <columns>client_address_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="45" parent="11" name="FK_d662xg4xm56o59hrinss6t5os">
+        <columns>client_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="46" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="47" parent="11" name="FK_d662xg4xm56o59hrinss6t5os">
+        <columns>client_id</columns>
+        <ref-key>~.client.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="48" parent="11" name="FK_4cq6gf373yn3udfkcci2u4tkq">
+        <columns>client_address_id</columns>
+        <ref-key>~.address.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="49" parent="12" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint(20)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="50" parent="12" name="price">
+        <mandatory>1</mandatory>
+        <data-type>float|0</data-type>
+      </column>
+      <column id="51" parent="12" name="priceName">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <index id="52" parent="12" name="UK_iyfnhyrkb5b1abe8aokrc62gt">
+        <columns>priceName</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="53" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="54" parent="12" name="UK_iyfnhyrkb5b1abe8aokrc62gt">
+        <columns>priceName</columns>
+        <underlying-index>UK_iyfnhyrkb5b1abe8aokrc62gt</underlying-index>
+      </key>
     </database-model>
   </data-source>
 </component>

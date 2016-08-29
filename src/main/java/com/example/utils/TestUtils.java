@@ -2,6 +2,7 @@ package com.example.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class TestUtils {
     public TestUtils(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
-
+    private Base64 encoder = new Base64();
     private <T> T fromJson(byte[] input, Class<T> tClass) {
         T object = null;
         try {
@@ -38,5 +39,8 @@ public class TestUtils {
             e.printStackTrace();
         }
         return objectInJson;
+    }
+    public String getAuthorizationHeaders(String userName, String password) {
+        return new String(encoder.encode((userName + ":" + password).getBytes()));
     }
 }

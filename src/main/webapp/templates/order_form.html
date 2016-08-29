@@ -1,0 +1,29 @@
+<ng-form id="orderForm" layout="column" layout-align="space-around stretch">
+    <md-input-container>
+        <label>Ім'я замовника</label>
+        <input ng-model="currentOrder.client.name">
+    </md-input-container>
+    <md-input-container>
+        <label>Мобільний номер замовника</label>
+        <input ng-model="currentOrder.client.phone">
+    </md-input-container>
+    <md-input-container>
+        <label>Розмір замовлення: кг</label>
+        <input ng-model="currentOrder.quantityKG">
+    </md-input-container>
+
+    <md-input-container>
+        <label>Місто</label>
+        <input ng-model="currentOrder.orderAddress.city">
+    </md-input-container>
+    <md-input-container>
+        <label>Вулиця</label>
+        <input ng-model="currentOrder.orderAddress.street">
+    </md-input-container>
+    <md-input-container>
+        <label>Будинок</label>
+        <input ng-model="currentOrder.orderAddress.building">
+    </md-input-container>
+    <div flex></div>
+    <md-button ng-click="updateOrder(currentOrder)">Підтвердити замовлення</md-button>
+</ng-form>

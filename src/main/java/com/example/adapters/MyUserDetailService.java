@@ -1,7 +1,7 @@
 package com.example.adapters;
 
 import com.example.domain.Admin;
-import com.example.services.person.admin.AdminServiceI;
+import com.example.services.admin.AdminServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetailsService;
