@@ -26,7 +26,6 @@ public class SolidFuelIncApplication {
     public void construct() {
         if (adminService.findByUserName("Dimitrij94") == null)
             adminService.save(new Admin("Dimitrij94", "d147896325", "380989785514", true, Authorities.SUPER_ADMIN));
-
     }
 }
 
