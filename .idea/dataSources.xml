@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2946346345">
+  <component name="DataSourceManagerImpl" format="xml" hash="91701649">
     <data-source source="LOCAL" name="MySQL - solid_fuel@localhost" uuid="915e114e-998d-4610-8b6b-ff7036a882c9">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
@@ -14,6 +14,12 @@
         <property name="characterSetResults" value="utf8" />
         <property name="yearIsDateType" value="false" />
       </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="H2 - solid_fuel" uuid="5c1297e5-4f28-49c9-bc13-bdc7d8eb35e3">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:solid_fuel</jdbc-url>
     </data-source>
   </component>
 </project>
