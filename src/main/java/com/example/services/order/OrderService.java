@@ -12,10 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.Future;
 
 /**
  * Created by Dmitrij on 28.07.2016.
@@ -54,6 +57,28 @@ public class OrderService extends GenericService<ClientOrder> implements OrderSe
         order.setClient(client);
         order.setOrderAddress(address);
         return super.save(order);
+    }
+
+    @Async
+    @Override
+    public Future<ClientOrder> asyncPost(ClientOrder order) {
+        order = saveOrderClient(order);
+        order = saveOrderAddress(order);
+        return new AsyncResult<>(super.save(order));
+    }
+
+    private ClientOrder saveOrderAddress(ClientOrder order) {
+        Address orderAddress = addressService.save(order.getOrderAddress(), order.getClient());
+        order.setOrderAddress(orderAddress);
+        return order;
+    }
+
+    private ClientOrder saveOrderClient(ClientOrder order) {
+        Client client = order.getClient();
+        Client c = clientService.find(client.getPhone(), client.getEmail());
+        client = c == null ? clientService.save(client) : c;
+        order.setClient(client);
+        return order;
     }
 
 

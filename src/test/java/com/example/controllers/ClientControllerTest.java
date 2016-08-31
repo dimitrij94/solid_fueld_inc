@@ -92,7 +92,7 @@ public class ClientControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(mockJsonClient))
                 .andExpect(status().isOk());
-        clientService.delete(mockClient.getId());
+        clientService.delete(clientService.find(mockClient.getPhone()).getId());
     }
 
 

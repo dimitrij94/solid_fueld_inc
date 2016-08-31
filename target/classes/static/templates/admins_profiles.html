@@ -1,0 +1,54 @@
+<section layout-sm="column" layout-xs="column" layout="row" layout-align="space-around stretch" layout-padding layout-fill>
+    <md-content flex-sm="100" flex-xs="100" flex="50" md-theme="docs-dark" class="md-whiteframe-4dp add-margin">
+        <md-list>
+            <md-list-item ng-repeat="admin in admins" ng-click="makeActive(admin)"
+                          ng-class="{'active_list_item':admin==activeAdmin}"
+                          layout="row" class="md-2-line">
+                <div flex="15" class="md-list-item-text">
+                    <md-icon class="material-icons md-48">{{getClass(admin)}}</md-icon>
+                </div>
+                <div flex="85" class="md-list-item-text" layout="column">
+                    <h3>{{admin.userName}}</h3>
+                </div>
+            </md-list-item>
+            <md-list-item ng-click="makeActive(newAdmin)"
+                          ng-class="{'active_list_item':newAdmin==activeAdmin}"
+                          layout="row" class="md-2-line">
+                <div flex="15" class="md-list-item-text">
+                    <md-icon class="material-icons md-48">person_add</md-icon>
+                </div>
+                <div flex="85" class="md-list-item-text" layout="column">
+                    <h3>Створити нового адміністратора</h3>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+    <md-content flex-sm="100" flex-xs="100" flex="50" class="md-whiteframe-4dp add-margin">
+        <form layout="column" layout-align="stretch center" ng-submit="updateAdmin(activeAdmin)">
+            <md-input-container>
+                <label>Username</label>
+                <input ng-model="activeAdmin.userName">
+            </md-input-container>
+            <md-input-container>
+                <label>Password</label>
+                <input ng-model="activeAdmin.password">
+            </md-input-container>
+            <md-button class="md-raised md-accent" ng-click="updateAdmin(activeAdmin)"
+                       ng-disabled="!activeAdmin||activeAdmin==newAdmin">
+                <md-icon class="material-icons md-48">find_replace</md-icon>
+                Обнивити адміністратора
+            </md-button>
+            <md-button class="md-raised md-accent" ng-click="createAdmin(activeAdmin)"
+                       ng-disabled="!activeAdmin||activeAdmin!=newAdmin">
+                <md-icon class="material-icons md-48">sentiment_very_satisfied</md-icon>
+                Створити адміністатора
+            </md-button>
+            <md-button class="md-raised md-accent" ng-click="deleteAdmin(activeAdmin)"
+                       ng-disabled="!activeAdmin||activeAdmin==newAdmin">
+                <md-icon class="material-icons md-48">sentiment_dissatisfied</md-icon>
+                Видалити адміністратора
+            </md-button>
+        </form>
+    </md-content>
+
+</section>

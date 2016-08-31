@@ -1,0 +1,14 @@
+<md-list-item ng-click="changeOrderStatus(order)" class="md-3-line">
+    <div class="md-list-item-text" layout="column" layout-align="center center">
+        <md-checkbox style="margin: 0" aria-label="Додати замовлення до маршруту" ng-checked="order.status=='DELIVERED'" ng-click="changeOrderStatus(order)"></md-checkbox>
+    </div>
+    <div class="md-list-item-text" layout="column">
+        <h3>{{order.client.name}}</h3>
+        <h4>{{order.client.phone}}</h4>
+        <h4>{{order.orderAddress.city+", "+order.orderAddress.street+", "+order.orderAddress.building}}</h4>
+    </div>
+    <div class="md-list-item-text" layout="column" layout-align="center center">
+        <h3>{{order.orderMade|date:'HH:mm'}}</h3>
+        <h4>{{order.orderMade|date:'yyyy.MM.dd'}}</h4>
+    </div>
+</md-list-item>

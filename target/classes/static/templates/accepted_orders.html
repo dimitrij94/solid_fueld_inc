@@ -1,0 +1,11 @@
+<md-content layout-xs="column" layout-sm="column" layout="row" layout-fill layout-padding>
+    <md-whiteframe flex-sm="100" flex-xs="100" flex="50" class="md-whiteframe-4dp" style="margin: 4px">
+        <orders-addresses-list orders="orders" current-order="currentOrder"></orders-addresses-list>
+    </md-whiteframe>
+    <md-whiteframe flex-sm="100" flex-xs="100" flex="50" class="md-whiteframe-4dp" layout="column" style="margin: 4px">
+        <ya-map flex="90" ya-zoom="10" ya-center="[24.162471,50.736616]" ya-after-init="route($target)"></ya-map>
+        <md-button flex="10" class="md-raised md-accent" ng-click="submitOrders(orders)">
+            Підтвердити доставку
+        </md-button>
+    </md-whiteframe>
+</md-content>

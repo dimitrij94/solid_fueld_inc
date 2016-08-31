@@ -1,0 +1,5 @@
+{
+  "registry": "http://bower.herokuapp.com",
+  "directory":"static/bower",
+  "strict-ssl": false
+}

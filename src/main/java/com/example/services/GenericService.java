@@ -6,7 +6,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.concurrent.Future;
 
 /**
  * Created by Dmitrij on 25.07.2016.
@@ -14,6 +18,8 @@ import org.springframework.transaction.annotation.Transactional;
 public abstract class GenericService<T> implements ServiceI<T> {
 
     protected abstract JpaRepository<T, Long> getRepository();
+
+    String notFoundErrorMessage = "No such entity found";
 
     @Override
     public Page<T> query(int page, int numResults) {
@@ -40,7 +46,6 @@ public abstract class GenericService<T> implements ServiceI<T> {
     @Override
     @Transactional
     public T update(T entity, Long id) throws NotFoundException {
-        String notFoundErrorMessage = "No such entity found";
         if (find(id) != null)
             return save(entity);
         else throw new NotFoundException(notFoundErrorMessage);
@@ -51,6 +56,29 @@ public abstract class GenericService<T> implements ServiceI<T> {
     public void delete(Long id) throws NotFoundException {
         if (find(id) != null)
             getRepository().delete(id);
-        else throw new NotFoundException("No such entity found");
+        else throw new NotFoundException(notFoundErrorMessage);
     }
+
+    @Override
+    @Async
+    public Future<T> asyncPost(T entity) {
+        return new AsyncResult<T>(getRepository().save(entity));
+    }
+
+    @Async
+    @Override
+    public Future<T> asyncPut(T entity, Long id) throws NotFoundException {
+        if (find(id) != null)
+            return new AsyncResult<T>(save(entity));
+        else throw new NotFoundException(notFoundErrorMessage);
+    }
+
+    @Async
+    @Override
+    public void asyncDelete(Long id) throws NotFoundException {
+        if (find(id) != null)
+            getRepository().delete(id);
+        else throw new NotFoundException(notFoundErrorMessage);
+    }
+
 }
