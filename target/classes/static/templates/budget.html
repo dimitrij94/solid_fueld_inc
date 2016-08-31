@@ -1,0 +1,27 @@
+<section layout="column" layout-align="start space-around" layout-fill layout-padding>
+    <section flex="85" layout-xs="column" layout-sm="column" layout="row" layout-align="space-around stretch" layout-padding>
+
+        <md-content md-theme="docs-dark" flex="50" flex-xs="100" flex-sm="100" class="md-whiteframe-4dp add-margin">
+            <orders-list orders="orders" current-order="currentOrder"></orders-list>
+        </md-content>
+
+        <md-whiteframe flex="50" flex-sm="100" flex-xs="100" layout="column" class="md-whiteframe-4dp add-margin">
+            <md-button ng-repeat="orderAction in orderActions" ng-click="updateOrder(currentOrder,orderAction.status)"
+                       class="md-raised md-accent" layout="row">
+                <md-icon class="material-icons md-24" flex="10">{{orderAction.icon}}</md-icon>
+                <span flex="90">{{orderAction.message}}</span>
+            </md-button>
+        </md-whiteframe>
+    </section>
+    <md-whiteframe flex="15" class="md-whiteframe-3dp">
+        <form ng-submit="updatePrices()" layout="row" layout-align="center space-around">
+            <md-input-group layout="row" layout-align="center space-around">
+                <md-input-container style="margin: 18px 0 0 0" ng-repeat="price in prices">
+                    <label>{{getPriceLabel(price)}}</label>
+                    <input type="number" ng-model="price.price">
+                </md-input-container>
+            </md-input-group>
+            <md-button ng-click="updatePrices()">Оновити</md-button>
+        </form>
+    </md-whiteframe>
+</section>

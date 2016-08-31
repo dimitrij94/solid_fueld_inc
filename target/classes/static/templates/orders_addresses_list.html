@@ -1,0 +1,19 @@
+<div layout="row" layout-align="start center">
+    <md-button class="md-primary" ng-click="changeSorting(sort.city)">Місто
+        <md-icon class="material-icons md-24">keyboard_arrow_{{sort.city.direction}}</md-icon>
+    </md-button>
+    <md-button class="md-primary" ng-click="changeSorting(sort.street)">Вулиця
+        <md-icon class="material-icons md-24">keyboard_arrow_{{sort.street.direction}}</md-icon>
+    </md-button>
+    <md-button class="md-primary" ng-click="changeSorting(sort.date)">Дата
+        <md-icon class="material-icons md-24">keyboard_arrow_{{sort.date.direction}}</md-icon>
+    </md-button>
+    <span flex></span>
+    <input placeholder="Пошук" style="width:100%;" ng-model="query.orderAddress.$">
+</div>
+<md-content>
+    <md-list>
+        <order-address ng-repeat="order in orders|filter:query|orderBy:activeSorting.directionSign+activeSorting.name"
+               order="order"></order-address>
+    </md-list>
+</md-content>

@@ -28,5 +28,16 @@ public class AddressService extends GenericService<Address> implements AddressSe
         return addressRepository;
     }
 
+    @Override
+    public Address save(Address address, Client client){
+        address.setClient(client);
+        List<Address> clientAddress = client.getAddress();
+        int addressIndex = clientAddress.indexOf(address);
+        if(addressIndex!=-1)
+            return client.getAddress().get(addressIndex);
+        else{
+            return save(address);
+        }
+    }
 
 }

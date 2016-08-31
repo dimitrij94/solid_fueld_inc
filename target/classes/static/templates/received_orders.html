@@ -1,0 +1,13 @@
+<md-content md-theme="docs-dark" layout-xs="column" layout-sm="column" layout="row" layout-fill layout-padding>
+    <md-whiteframe flex-sm="100" flex-xs="100" flex="50" class="md-whiteframe-4dp" style="margin:4px">
+        <orders-list current-order="currentOrder" orders="orders"></orders-list>
+    </md-whiteframe>
+    <md-content flex-sm="100" flex-xs="100" md-theme="docs-dark" class="md-whiteframe-4dp" flex="50" style="margin:4px">
+        <div ng-if="currentOrder==null" layout="column" layout-align="center center" layout-fill>
+            <md-subheader>Будь ласка виберіть замовлення</md-subheader>
+        </div>
+        <div ng-show="currentOrder!=null">
+           <order-form current-order="currentOrder"></order-form>
+        </div>
+    </md-content>
+</md-content>

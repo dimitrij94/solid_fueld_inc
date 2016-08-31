@@ -48,19 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().csrfTokenRepository(csrfTokenRepository());
         http.userDetailsService(userDetailsService);
         http
-                .authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/admin/**").hasRole(Authorities.SUPER_ADMIN_VAL)
-                .antMatchers(HttpMethod.GET, "/admin").hasAnyRole(Authorities.ROLE_ADMIN_VAL, Authorities.SUPER_ADMIN_VAL)
-                .antMatchers(HttpMethod.POST, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL)
-                .antMatchers(HttpMethod.PUT, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL)
-                .antMatchers(HttpMethod.DELETE, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL)
-
-                .antMatchers(HttpMethod.POST, "/order", "/client").permitAll()
-                .antMatchers(HttpMethod.GET, "/").hasRole(Authorities.ROLE_ADMIN_VAL)
-                .regexMatchers(HttpMethod.POST, "/").hasRole(Authorities.ROLE_ADMIN_VAL)
-                .regexMatchers(HttpMethod.DELETE, "/").hasRole(Authorities.ROLE_ADMIN_VAL)
-                .regexMatchers(HttpMethod.PUT, "/").hasRole(Authorities.ROLE_ADMIN_VAL)
-                .antMatchers(HttpMethod.GET, "/").permitAll();
+                .authorizeRequests().antMatchers(HttpMethod.GET, "/admin/**").hasRole(Authorities.SUPER_ADMIN_VAL).antMatchers(HttpMethod.GET, "/admin").hasAnyRole(Authorities.ROLE_ADMIN_VAL, Authorities.SUPER_ADMIN_VAL).antMatchers(HttpMethod.POST, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL).antMatchers(HttpMethod.PUT, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL).antMatchers(HttpMethod.DELETE, "/admin").hasRole(Authorities.SUPER_ADMIN_VAL).antMatchers(HttpMethod.POST, "/order", "/client").permitAll().antMatchers(HttpMethod.GET, "/").hasRole(Authorities.ROLE_ADMIN_VAL).regexMatchers(HttpMethod.POST, "/").hasRole(Authorities.ROLE_ADMIN_VAL).regexMatchers(HttpMethod.DELETE, "/").hasRole(Authorities.ROLE_ADMIN_VAL).regexMatchers(HttpMethod.PUT, "/").hasRole(Authorities.ROLE_ADMIN_VAL).antMatchers(HttpMethod.GET, "/").permitAll();
     }
 
     private CsrfTokenRepository csrfTokenRepository() {

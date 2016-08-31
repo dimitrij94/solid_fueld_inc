@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome home</title>
+    <link rel="stylesheet"
+          href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="css/admin_home.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body ng-app="AdminPage" ng-cloak>
+<md-content layout="column" flex ng-controller="appController" layout-fill>
+    <md-toolbar flex-sm="10" flex-xs="10" flex="0" hide-gt-sm md-theme="default">
+        <div class="md-toolbar-tools" layout="row" layout-align="start center" layout-fill>
+            <md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="More">
+                <md-icon class="material-icons md-48">menu</md-icon>
+            </md-button>
+           <p>{{getTitle()}}</p>
+        </div>
+    </md-toolbar>
+    <section  flex-gt-sm="100" layout="row" layout-align="start stretch">
+        <md-sidenav
+                flex="25"
+                class="md-sidenav-left"
+                md-component-id="left"
+                style="width:400px"
+                md-is-locked-open="$mdMedia('gt-md')"
+                md-disable-backdrop
+                md-whiteframe="4"
+                layout="column">
+            <md-toolbar class="md-hue-2">
+                <h1 class="md-toolbar-tools" style='color:white'>{{getTitle()}}</h1>
+            </md-toolbar>
+            <md-content layout="column" flex ng-controller="navigator">
+
+                <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md>
+                    Close Sidenav Left
+                </md-button>
+
+                <md-content md-theme="docs-dark" layout="column" flex>
+                    <ng-form layout-padding layout="column" flex ng-hide="authenticated()" onsubmit="login(admin)">
+                        <md-input-container>
+                            <label>Login</label>
+                            <input name="userName" type="text" ng-model="admin.userName">
+                        </md-input-container>
+                        <md-input-container>
+                            <label>Password</label>
+                            <input name="password" type="password" ng-model="admin.password">
+                        </md-input-container>
+                        <md-button ng-click="login(admin)" type="submit">Войти</md-button>
+                    </ng-form>
+
+                    <md-list flex ng-show="authenticated()">
+                        <md-list-item class="md-3-line" ng-repeat="navigation in navigations" layout="row"
+                                      ng-click="changeLocation(navigation)">
+                            <div flex="15" class="md-list-item-text">
+                                <md-icon class="material-icons md-48">{{navigation.mdClass}}</md-icon>
+                            </div>
+                            <div flex="85" class="md-list-item-text" layout="column">
+                                <h3>{{navigation.header}}</h3>
+                                <h4>{{navigation.subheader}}</h4>
+                            </div>
+                        </md-list-item>
+                    </md-list>
+                </md-content>
+            </md-content>
+        </md-sidenav>
+        <section flex="75" layout="column" layout-fill ng-view>
+
+        </section>
+    </section>
+
+</md-content>
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-resource.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+<script src="vendor/angular-yandex-map/ya-map-2.1.min.js"></script>
+<script src="js/admin_page.js"></script>
+</body>
+</html>
