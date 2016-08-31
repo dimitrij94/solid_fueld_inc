@@ -7,5 +7,11 @@
       <introspection-scope>solid_fuel:</introspection-scope>
       <resolve-scope>solid_fuel:*</resolve-scope>
     </data-source>
+    <data-source name="H2 - solid_fuel" uuid="5c1297e5-4f28-49c9-bc13-bdc7d8eb35e3">
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <introspection-scope>SOLID_FUEL:public</introspection-scope>
+      <resolve-scope>SOLID_FUEL:public</resolve-scope>
+    </data-source>
   </component>
 </project>
