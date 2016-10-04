@@ -62,7 +62,7 @@ public abstract class GenericService<T> implements ServiceI<T> {
     @Override
     @Async
     public Future<T> asyncPost(T entity) {
-        return new AsyncResult<T>(getRepository().save(entity));
+        return new AsyncResult<T>(save(entity));
     }
 
     @Async
@@ -76,9 +76,7 @@ public abstract class GenericService<T> implements ServiceI<T> {
     @Async
     @Override
     public void asyncDelete(Long id) throws NotFoundException {
-        if (find(id) != null)
-            getRepository().delete(id);
-        else throw new NotFoundException(notFoundErrorMessage);
+        delete(id);
     }
 
 }
